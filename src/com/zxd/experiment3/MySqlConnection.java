@@ -21,18 +21,15 @@ public class MySqlConnection {
         try {
             // 加载数据库驱动类
             Class.forName("com.mysql.cj.jdbc.Driver");
-            System.out.println("数据库驱动加载成功");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
         try {
             // 通过访问数据库的URL获取数据库连接对象
             connection = DriverManager.getConnection(
                             "jdbc:mysql://localhost:3306/atm_db?useUnicode=true&characterEncoding=gbk",
                             USER,
                             PASSWORD);
-            System.out.println("数据库连接成功");
         } catch (SQLException e) {
             e.printStackTrace();
         }

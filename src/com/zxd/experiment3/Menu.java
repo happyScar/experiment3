@@ -2,12 +2,14 @@ package com.zxd.experiment3;
 import javax.swing.*; 
 import java.awt.*;  
 import java.awt.event.ActionEvent;  
-import java.awt.event.ActionListener;  
-import java.sql.*;
-/*
- *操作主界面 
- */
+import java.awt.event.ActionListener;
 
+
+/**
+ * 操作主界面
+ *
+ * @author zz
+ */
 public class Menu extends JFrame implements ActionListener {
 	/** 定义面板 */
 	private JPanel mp1,mp2;
@@ -122,7 +124,7 @@ public class Menu extends JFrame implements ActionListener {
 			// 关闭窗体
 			dispose();
 			// 再次打开登录界面
-			new Login(currentAccount);
+			new Login();
 		}
 	}
 }

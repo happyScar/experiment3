@@ -5,6 +5,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.Statement;
 
 /**
  * ATM存款界面
@@ -103,6 +105,14 @@ public class InMoney implements ActionListener {
                 if(money1 % 100 == 0){
                     // 调用当前登陆账户的存钱函数
                     currentAccount.inMoney(Integer.parseInt(money.getText()));
+                    Statement statement = new MySqlConnection().getConnection().createStatement();
+                    String sql = "UPDATE card_info SET money=money+%s WHERE card_id='%s'";
+                    String[] strings = {money.getText(),currentAccount.id};
+                    if(statement.executeUpdate(String.format(sql,strings[0],strings[1]))!=0){
+                        System.out.println("更新成功");
+                    }else {
+                        System.out.println("更新失败");
+                    }
                     // 弹窗
                     JOptionPane.showMessageDialog(null, "存款成功");
                     // 文本框清空
