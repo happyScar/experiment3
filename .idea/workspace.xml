@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:更新readme文件">
+    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="fix:存款功能持久化">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/InMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/InMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/OutMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/OutMoney.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685170225259</updated>
-      <workItem from="1685170226189" duration="9530000" />
+      <workItem from="1685170226189" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685170432501</created>
@@ -156,7 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685178810708</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix:使用lambada表达式退出">
+      <created>1685180028344</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685180028344</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feature:可以根据数据库查询账户啦">
+      <created>1685180101270</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685180101270</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix:存款功能持久化">
+      <created>1685180171191</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685180171191</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,8 +211,10 @@
     <MESSAGE value="feature:稍微美化UI界面" />
     <MESSAGE value="fix:更改异常输出方式" />
     <MESSAGE value="feature:增加数据库连接类" />
-    <MESSAGE value="feature:可以根据数据库查询账户啦" />
     <MESSAGE value="feature:更新readme文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature:更新readme文件" />
+    <MESSAGE value="fix:使用lambada表达式退出" />
+    <MESSAGE value="feature:可以根据数据库查询账户啦" />
+    <MESSAGE value="fix:存款功能持久化" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:存款功能持久化" />
   </component>
 </project>

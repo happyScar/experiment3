@@ -3,7 +3,8 @@ package com.zxd.experiment3;
 import javax.swing.*;
 import java.awt.*;  
 import java.awt.event.ActionEvent;  
-import java.awt.event.ActionListener; 
+import java.awt.event.ActionListener;
+import java.sql.Statement;
 
 /*
  * 取款界面
@@ -105,6 +106,14 @@ public class OutMoney implements ActionListener{
             	}
             	if(flag1&&flag2) {            		
             		currentAccount.outMoney(Integer.parseInt(money.getText()));
+		            Statement statement = new MySqlConnection().getConnection().createStatement();
+		            String sql = "UPDATE card_info SET money=money-%s WHERE card_id='%s'";
+		            String[] strings = {money.getText(),currentAccount.id};
+		            if(statement.executeUpdate(String.format(sql,strings[0],strings[1]))!=0){
+			            System.out.println("更新成功");
+		            }else {
+			            System.out.println("更新失败");
+		            }
 		            // 弹窗
             		JOptionPane.showMessageDialog(null, "取款成功");
 		            // 更新余额显示
