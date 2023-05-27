@@ -34,7 +34,7 @@ public class Inqury extends JFrame{
 			    }
 		    }
 	    }catch(Exception e) {
-		    System.out.println(e);
+		    e.printStackTrace();
 	    }
 
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

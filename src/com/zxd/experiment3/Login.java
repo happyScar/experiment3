@@ -41,7 +41,7 @@ public class Login extends JFrame implements ActionListener{
 				}
 			}
 		}catch(Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 
 		currentAccount=account;

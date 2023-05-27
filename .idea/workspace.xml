@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/InMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/InMoney.java" afterDir="false" />
+    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:稍微美化UI界面">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QMjDHglg0RuzyfCeEypSLHIMGX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685170225259</updated>
-      <workItem from="1685170226189" duration="2778000" />
+      <workItem from="1685170226189" duration="3436000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685170432501</created>
@@ -109,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685172760812</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feature:稍微美化UI界面">
+      <created>1685173199970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685173199970</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start:美化代码格式" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="feature:稍微美化UI界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:稍微美化UI界面" />
   </component>
 </project>

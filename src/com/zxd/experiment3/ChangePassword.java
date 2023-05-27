@@ -38,7 +38,7 @@ public class ChangePassword implements ActionListener {
 				}
 			}
 		}catch(Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 
 		cframe=new JFrame("¸ü¸ÄÃÜÂë");

@@ -38,7 +38,7 @@ public class InMoney implements ActionListener {
                 }
             }
         }catch(Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         inframe = new JFrame("´æ¿î");
