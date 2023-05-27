@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="fix:更改异常输出方式">
-      <change afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/MySqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/lib/mysql-connector-j-8.0.33.jar" afterDir="false" />
+    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:增加数据库连接类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/experiment3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/MySqlConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/MySqlConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\experimentOfJava\experiment3\src\com\zxd\experiment3\lib" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zxd.experiment3.Main" />
@@ -79,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685170225259</updated>
-      <workItem from="1685170226189" duration="4652000" />
+      <workItem from="1685170226189" duration="7948000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685170432501</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685174147843</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feature:增加数据库连接类">
+      <created>1685175322551</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685175322551</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +175,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="feature:稍微美化UI界面" />
     <MESSAGE value="fix:更改异常输出方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:更改异常输出方式" />
+    <MESSAGE value="feature:增加数据库连接类" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:增加数据库连接类" />
   </component>
 </project>
