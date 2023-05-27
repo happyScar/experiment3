@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:增加数据库连接类">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:可以根据数据库查询账户啦">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/MySqlConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/MySqlConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/zz/Desktop/mall-server-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685170225259</updated>
-      <workItem from="1685170226189" duration="7948000" />
+      <workItem from="1685170226189" duration="8458000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685170432501</created>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685175322551</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feature:可以根据数据库查询账户啦">
+      <created>1685178361384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685178361384</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +182,7 @@
     <MESSAGE value="feature:稍微美化UI界面" />
     <MESSAGE value="fix:更改异常输出方式" />
     <MESSAGE value="feature:增加数据库连接类" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature:增加数据库连接类" />
+    <MESSAGE value="feature:可以根据数据库查询账户啦" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:可以根据数据库查询账户啦" />
   </component>
 </project>
