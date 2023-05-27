@@ -1,4 +1,4 @@
-package ATM;
+package com.zxd.experiment3;
 
 import javax.swing.*;
 import java.awt.*;  
@@ -10,8 +10,8 @@ import java.awt.event.ActionListener;
  */
 
 public class OutMoney implements ActionListener{
-	
-	//定义组件
+
+	/** 定义组件 */
 	public JTextField money;
 	public JFrame oframe;
 	public JPanel op0,op1,op2,op3,op4;
@@ -20,8 +20,12 @@ public class OutMoney implements ActionListener{
 	boolean flag1=false;
 	boolean flag2=false;
 	private Account currentAccount;
-	
-	//构造取款界面
+
+	/**
+	 * 构造取款界面
+	 *
+	 * @param account 要取款的账户
+	 */
 	public OutMoney(Account account){
 		oframe=new JFrame("取款");
 		oframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,9 +63,11 @@ public class OutMoney implements ActionListener{
 	    oframe.add(op3);
 	    
 	    oframe.setLayout(new FlowLayout());  
-	    oframe.setVisible(true);  
-	    oframe.setSize(450, 200);//窗体大小 
-	    oframe.setLocationRelativeTo(null);//在屏幕中间显示(居中显示)  
+	    oframe.setVisible(true);
+		// 窗体大小
+	    oframe.setSize(450, 200);
+		// 在屏幕中间显示(居中显示)
+	    oframe.setLocationRelativeTo(null);
 	    oframe.setResizable(false);
 	      
 	    confirm.addActionListener(this);  
@@ -76,40 +82,50 @@ public class OutMoney implements ActionListener{
         	flag2=false;
             try { 
             	int money1=Integer.parseInt(money.getText());
-            	if(money1%100==0) {//取款金额为整百的数
+	            // 取款金额为整百的数
+            	if(money1%100==0) {
             		flag1=true;
             	}
-            	if(money1<=5000&&money1>0) {//取款金额不超过5000
+	            // 取款金额不超过5000
+            	if(money1<=5000&&money1>0) {
             		flag2=true;
             	}
             	if(flag1&&flag2) {            		
-            		currentAccount.outMoney(Integer.parseInt(money.getText()));  	
-            		JOptionPane.showMessageDialog(null, "取款成功");//弹窗  
-            		yue.setText("账户余额:"+currentAccount.money);//更新余额显示
-            		money.setText("");//清空文本框
+            		currentAccount.outMoney(Integer.parseInt(money.getText()));
+		            // 弹窗
+            		JOptionPane.showMessageDialog(null, "取款成功");
+		            // 更新余额显示
+            		yue.setText("账户余额:"+currentAccount.money);
+		            // 清空文本框
+            		money.setText("");
             	}
             	if(!flag1) {
-            		JOptionPane.showMessageDialog(null, "系统不支持非100元整钞取款\n 请重新输入取款金额 ！ ");//弹窗 
+		            // 弹窗
+            		JOptionPane.showMessageDialog(null, "系统不支持非100元整钞取款\n 请重新输入取款金额 ！ ");
             		money.setText("");
             	}
             	if(!flag2){
-            		JOptionPane.showMessageDialog(null, "系统不支持取款超过5000元\n 请重新输入取款金额 ！ ");//弹窗 
+		            // 弹窗
+            		JOptionPane.showMessageDialog(null, "系统不支持取款超过5000元\n 请重新输入取款金额 ！ ");
             		money.setText("");
             	}
             	if(money1>currentAccount.money){
-            		JOptionPane.showMessageDialog(null, "余额不足，请重新输入取款金额 ！ ");//弹窗 
+		            // 弹窗
+            		JOptionPane.showMessageDialog(null, "余额不足，请重新输入取款金额 ！ ");
             		money.setText("");
             	}
             }  
             catch (ClassCastException e1){
-                JOptionPane.showMessageDialog(null, "输入数据类型错误，请输入整数");//捕获Test类中outmoney方法的异常
+	            // 捕获 Test 类中 outMoney 方法的异常
+                JOptionPane.showMessageDialog(null, "输入数据类型错误，请输入整数");
             }  
             catch (Exception e1){  
                 JOptionPane.showMessageDialog(null, e1.getMessage());  
             }  
         }  
-		else if(e.getActionCommand().equals("返回")){
-				oframe.dispose();//关闭取款界面
+		else if("返回".equals(e.getActionCommand())){
+			// 关闭取款界面
+			oframe.dispose();
 		}
 	}
 }

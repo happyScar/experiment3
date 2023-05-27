@@ -1,11 +1,22 @@
-package ATM;
+package com.zxd.experiment3;
 
+/**
+ * @author zz
+ */
 public class Account {
-	int money;  
-	String id;//账号名  
-	String password;  
-	
-	public Account(String id, String password, String money) {//构造方法
+	int money;
+	/** 账号名 */
+	String id;
+	String password;
+
+	/**
+	 * 构造方法
+	 *
+	 * @param id 账号
+	 * @param password 密码
+	 * @param money 初始化存款钱数
+	 */
+	public Account(String id, String password, String money) {
 	    this.id = id;  
 	    this.password = password;  
 	    this.money=Integer.parseInt(money);  
@@ -28,12 +39,12 @@ public class Account {
 		this.money+=money;
     }  	   
 	
-	public void ChangePassword(String newPassword)throws Exception{
+	public void changePassword(String newPassword)throws Exception{
 	    if(newPassword.equals(this.password)) {
 	        throw new Exception("原密码和新密码不能一样");  
 	    }  
 	    else {
-	        if(newPassword.equals("")) {
+	        if("".equals(newPassword)) {
 	            throw new Exception("密码不能为空");  
 	        }  
 	    }  
