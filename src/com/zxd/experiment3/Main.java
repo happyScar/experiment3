@@ -8,6 +8,7 @@ package com.zxd.experiment3;
  */
 public class Main {
     public static void main(String[] args){
+        new MySqlConnection().getConnection();
         new Login(new Account("888888","123456","50000"));
     }
 }
