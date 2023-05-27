@@ -29,6 +29,18 @@ public class InMoney implements ActionListener {
      * @param account 要存款的账户
      */
     public InMoney(Account account){
+        // 简单美化UI
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        }catch(Exception e) {
+            System.out.println(e);
+        }
+
         inframe = new JFrame("存款");
         currentAccount = account;
         inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

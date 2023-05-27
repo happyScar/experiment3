@@ -28,6 +28,19 @@ public class ChangePassword implements ActionListener {
 	 * @param account 要更改密码的账户
 	 */
 	public ChangePassword(Account account){
+
+		// 简单美化UI
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					javax.swing.UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+
 		cframe=new JFrame("更改密码");
 		cframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		currentAccount=account;

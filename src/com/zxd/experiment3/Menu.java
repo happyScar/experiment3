@@ -31,6 +31,19 @@ public class Menu extends JFrame implements ActionListener {
 	 */
 	public Menu(Account account){
 		super("ATM自动取款机系统");
+
+		// 简单美化UI
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					javax.swing.UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+
 		currentAccount=account;
 		// 设置窗体为3*1的网格布局
 		setLayout(new GridLayout(3,1));

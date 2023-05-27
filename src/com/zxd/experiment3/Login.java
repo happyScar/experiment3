@@ -3,9 +3,7 @@ package com.zxd.experiment3;
 import javax.swing.*;  
 import java.awt.*; 
 import java.awt.event.*;
-/*
- *
- */
+
 
 /**
  * 登录界面
@@ -33,6 +31,19 @@ public class Login extends JFrame implements ActionListener{
 	public Login(Account account){
 		// 窗体标题
 		super("登录ATM");
+
+		// 简单美化UI
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					javax.swing.UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+
 		currentAccount=account;
 		// 设置窗口的点击右上角的x的处理方式，这里设置的是退出程序
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

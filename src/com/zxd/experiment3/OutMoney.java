@@ -27,6 +27,19 @@ public class OutMoney implements ActionListener{
 	 * @param account 要取款的账户
 	 */
 	public OutMoney(Account account){
+
+		// 简单美化UI
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					javax.swing.UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+
 		oframe=new JFrame("取款");
 		oframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		currentAccount=account;

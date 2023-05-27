@@ -24,6 +24,19 @@ public class Inqury extends JFrame{
 	 */
     public Inqury(Account account){
 	    super("查询");
+
+	    // 简单美化UI
+	    try {
+		    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+			    if ("Nimbus".equals(info.getName())) {
+				    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+				    break;
+			    }
+		    }
+	    }catch(Exception e) {
+		    System.out.println(e);
+	    }
+
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    setLayout(new FlowLayout());
 	    currentAccount=account;	 
