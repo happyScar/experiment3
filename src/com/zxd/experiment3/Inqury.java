@@ -60,11 +60,7 @@ public class Inqury extends JFrame{
 	    // 设置窗体大小固定
     	setResizable(false);
     	
-    	ok.addActionListener(new ActionListener() {
-    		public void actionPerformed(ActionEvent e) {
-    			dispose();
-    		}
-    	});
+    	ok.addActionListener(e->dispose());
     }	
 }
 
