@@ -3,7 +3,8 @@ package com.zxd.experiment3;
 import javax.swing.*;  
 import java.awt.*;  
 import java.awt.event.ActionEvent;  
-import java.awt.event.ActionListener; 
+import java.awt.event.ActionListener;
+import java.sql.Statement;
 
 
 /**
@@ -107,8 +108,16 @@ public class ChangePassword implements ActionListener {
 	                    // 新密码大6位数
                     	if(newPassword.getText().length()>=6) {
                     		currentAccount.changePassword(newPassword.getText());
+		                    Statement statement = new MySqlConnection().getConnection().createStatement();
+		                    String sql = "UPDATE card_info SET password=%s WHERE card_id='%s'";
+		                    String[] strings = {newPassword.getText(),currentAccount.id};
+		                    if(statement.executeUpdate(String.format(sql,strings[0],strings[1]))!=0){
+			                    System.out.println("更新成功");
+		                    }else {
+			                    System.out.println("更新失败");
+		                    }
 		                    // 弹窗
-                    		JOptionPane.showMessageDialog(null, "更改密码成功");
+		                    JOptionPane.showMessageDialog(null, "更改密码成功");
 		                    // 关闭更改密码界面
                     		cframe.setVisible(false);
                     }
