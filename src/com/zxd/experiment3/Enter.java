@@ -78,7 +78,7 @@ public class Enter extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e){
         String str = e.getActionCommand();
         if("管理员身份".equals(str)){
-            new Login();
+            new AdminLogin();
         }else if("普通用户".equals(str)){
             new Login();
         }
