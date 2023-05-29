@@ -6,7 +6,7 @@ CREATE TABLE `card_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `admin_info` (
-                              `admin_id` varchar(8) NOT NULL,
-                              `password` varchar(255) DEFAULT NULL,
+                              `admin_id` varchar(8) NOT NULL COMMENT 'π‹¿Ì‘±’À∫≈',
+                              `password` varchar(255) DEFAULT NULL COMMENT '√‹¬Î',
                               PRIMARY KEY (`admin_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

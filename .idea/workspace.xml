@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:新增管理员操作" />
+    <list default="true" id="5cc9890f-d5f2-412f-907f-6e114a64e61d" name="Changes" comment="feature:新增admin建表sql语句">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9b19607-d9ec-4e41-9053-3dd5d97a1332.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9b19607-d9ec-4e41-9053-3dd5d97a1332.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zxd/experiment3/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zxd/experiment3/createTable.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +89,7 @@
       <updated>1685170225259</updated>
       <workItem from="1685170226189" duration="13154000" />
       <workItem from="1685286789061" duration="7408000" />
+      <workItem from="1685363891286" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685170432501</created>
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685328214197</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feature:新增admin建表sql语句">
+      <created>1685363927486</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685363927486</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +252,7 @@
     <MESSAGE value="fix:取款功能持久化" />
     <MESSAGE value="fix:修改密码功能持久化" />
     <MESSAGE value="feature:新增管理员身份登录页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature:新增管理员身份登录页面" />
+    <MESSAGE value="feature:新增admin建表sql语句" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:新增admin建表sql语句" />
   </component>
 </project>
